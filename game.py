@@ -33,8 +33,8 @@ class Game:
     if (
             moves[0] == 'D' and moves[1] != 'W' or
             moves[0] == 'W' and moves[1] == 'D' or
-            moves[0] == 'R' and moves[1] == 'S' or
-            moves[0] == 'S' and moves[1] == 'P' or
+            moves[0] == 'R' and moves[1] == 'S, get cut' or
+            moves[0] == 'S, get cut' and moves[1] == 'P' or
             moves[0] == 'P' and moves[1] == 'R' or
             moves[0] != 'D' and moves[1] == 'W'):
       self.__score[0] += self.__nextRoundPoints
